@@ -25,15 +25,15 @@
             <option value="Hallo "  >Tedesco</option>
         </select>
 
-       <!-- <div class="image">
-        <select name="Imaggine"  id="">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
+       <div class="image">
+        <select name="Imaggine" v-model="linkimg" id="">
+            <option value="./img/avatar1.webp">Avatar 1</option>
+            <option value="./img/avatar2.jpg">Avatar 2</option>
+            
         </select>
-       </div> -->
+       </div>
 
-        <img src="" alt="">
+        <img :src="linkimg"  alt="">
         
 
     </div>
