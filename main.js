@@ -6,7 +6,25 @@ const {createApp} = Vue;
 createApp({
     data(){
         return{
-            titolo: 'ciao'
+            nome:'',
+            saluto:'',
+            linkimg:''
+            
         }
     }
-}).mount('#app')
+}).mount('#app');
+
+
+
+
+
+// createApp({
+//     data(){
+//         return{
+//             nome: '',
+//             saluto: ''
+//         }
+//     }
+// }).mount('#app');
+
+

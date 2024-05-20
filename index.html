@@ -3,19 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
    
     <div id="app">
-        <h1>{{titolo}}</h1>
-        <p>{{descrizione}}</p>
+        <div class="title">
+            <h1>{{saluto}}</h1> 
+            <h1>{{nome}}</h1>
+        </div>
+        
+        
 
-        <input type="text" v-model="titolo">
+        <input type="text" name="" placeholder="Inserisci il tuo nome" v-model="nome" id="">
+        <select v-model='saluto'name=""  id="">
+            <option value="Ciao "  >Italiano</option>
+            <option value="Hola "  >Spagnolo</option>
+            <option value="Hello "  >Inglese</option>
+            <option value="Salut "  >Francese</option>
+            <option value="Hallo "  >Tedesco</option>
+        </select>
+
+       <!-- <div class="image">
+        <select name="Imaggine"  id="">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+       </div> -->
+
+        <img src="" alt="">
+        
 
     </div>
     
-    <script src="https://unp se ne sakg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
